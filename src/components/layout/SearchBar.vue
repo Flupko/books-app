@@ -17,7 +17,7 @@ import { ref } from "vue";
 export default {
   setup() {
     const store = useStore();
-    let inputValue = ref("");
+    const inputValue = ref("");
     return { store, inputValue };
   },
 };

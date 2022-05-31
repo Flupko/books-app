@@ -43,7 +43,7 @@ export default {
     const store = useStore();
     const route = useRoute();
 
-    let bookInfo = ref(false);
+    const bookInfo = ref(false);
 
     onMounted(async () => {
       let data = await store.getBookById(route.params.id);

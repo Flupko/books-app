@@ -1,8 +1,12 @@
 import { defineStore } from "pinia";
 import axios from "axios";
+import { useStorage } from "@vueuse/core";
 
 export const useStore = defineStore("counter", {
-  state: () => ({ searchResults: null, favoriteBooks: [] }),
+  state: () => ({
+    searchResults: null,
+    favoriteBooks: useStorage("favoriteBooks", []),
+  }),
   actions: {
     async searchBook(booktitle) {
       const options = {
