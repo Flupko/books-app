@@ -4,6 +4,7 @@
     placeholder="Search for a book"
     class="q-ma-md"
     v-model="inputValue"
+    @keydown.enter="store.searchBook(inputValue)"
   >
     <template v-slot:append>
       <q-icon name="search" @click="store.searchBook(inputValue)" />
