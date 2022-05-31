@@ -1,11 +1,12 @@
 <template>
   <div>
     <span class="text-h6 q-ma-md">
-      - Open-source application to search books infomations and save it.</span
+      - Open-source application to search for books infomation and save
+      it.</span
     >
     <span class="text-h6 q-ma-md">
       - Search for any books you would like, and get details about the author,
-      the plot, ...</span
+      the plot, and more.</span
     >
     <span class="text-h6 q-ma-md"> (Working thanks to Google Books API) </span>
   </div>

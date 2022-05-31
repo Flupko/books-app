@@ -18,7 +18,9 @@ export const useStore = defineStore("counter", {
       await axios
         .request(options)
         .then((response) => {
-          this.searchResults = response.data.items;
+          response.data.items !== null
+            ? (this.searchResults = response.data.items)
+            : (this.searchResults = false);
           console.log(response.data.items);
         })
         .catch((error) => {

@@ -3,7 +3,8 @@
     <SearchBar> </SearchBar>
     <BookList v-if="store.searchResults" :bookList="store.searchResults">
     </BookList>
-    <AppInfo v-else> </AppInfo>
+    <AppInfo v-else-if="store.searchResults === null"> </AppInfo>
+    <span v-else class="q-ma-md text-h4">No results found.</span>
   </q-page>
 </template>
 <script>
